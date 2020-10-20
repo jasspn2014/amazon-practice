@@ -1,6 +1,19 @@
 # Amazon Practice Questions
 
 ## Coding Questions
+
+**Sorting**
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Quick Sort
+* Merge Sort
+
+**Matrix**
+*  90 Degree Counter Clock Wise Rotation
+*  Spiral Order Traversal
+
+**Pending Questions**
 *	 BFS
 *	 DFS
 *	 Topological Sort
@@ -10,7 +23,7 @@
 *	 Tree Views(left,right,top,bottom)
 *	 Tree (Vertical sum, Spiral Traversal, ZigZag Traversal)
 *	 Tree (Identical Trees, SubTree, Mirror Tree)
-*	 Sorting(Bubble, insertion, selection, quick, merge)
+*  
 *	 Linked List (reverse, reverse in groups, loop detection, loop removal, sort a linked list)
 *	 Next Greatest Element (to left, to right)
 *	 Nearest Greater Elements (to left, to right)
