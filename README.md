@@ -17,6 +17,11 @@
 *  Preorder traversal
 *  Inorder traversal
 *  PostOrder Traversal
+*  Level Order Traversal
+*  Left View of Binary Tree
+*  Right View of Binary Tree
+*  Top View of Binary Tree
+*  Bottom View of Binary Tree
 
 **Pending Questions**
 *	 BFS
