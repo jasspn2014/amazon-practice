@@ -4,7 +4,6 @@
 *	 BFS
 *	 DFS
 *	 Topological Sort
-*	 Spiral Order Traversal
 *	 Shortest Path in a Matrix
 *	 Reach to n,n from 1,1
 *	 Tree Traversals (in order, preorder, postorder)
