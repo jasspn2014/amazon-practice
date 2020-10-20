@@ -1,5 +1,5 @@
 # Amazon Practice Questions
-===========
+
 ## Coding Questions
 *	 BFS
 *	 DFS
