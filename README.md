@@ -23,26 +23,35 @@
 *  Top View of Binary Tree
 *  Bottom View of Binary Tree
 
+
+**Linked List**
+*  Reverse a LinkedList
+*  Reverse a LinkedList in Groups
+
+**Stack**
+*  Sort a Stack
+*  Reverse a Stack
+*  Next Greater to Left
+*  Next Greater to Right
+*  Greatest to The Right
+*  Greatest to The Left
+*  Trapping Rain Water Problem
+*  Stock Span Problem
+*  Celebrity Problem
+*  Merge Overlapping Intervals
+*  Implement Queue with Two Stacks
+*  Maximum Area of a Histogram
+*  Maximum Area Rectangle in a Binary Matrix
+
 **Pending Questions**
 *	 BFS
 *	 DFS
 *	 Topological Sort
 *	 Shortest Path in a Matrix
 *	 Reach to n,n from 1,1
-
-*	 Tree Views(left,right,top,bottom)
 *	 Tree (Vertical sum, Spiral Traversal, ZigZag Traversal)
 *	 Tree (Identical Trees, SubTree, Mirror Tree)
 *	 Linked List (reverse, reverse in groups, loop detection, loop removal, sort a linked list)
-*	 Next Greatest Element (to left, to right)
-*	 Nearest Greater Elements (to left, to right)
-*	 Next Smallest Element(to left, to right)
-*	 Nearest Smallest Element(to left, to right)
-*	 sort a stack
-*	 reverse a stack
-*	 trapping rain water
-*	 max area in a histogram
-*	 max rectangle in matrix
 *	 Show Given binary tree is a bst or not
 *	 Convert a BST into inorder, preorder and postorder linkedlists inplace
 *	 Make a queue out of 2 stacks
