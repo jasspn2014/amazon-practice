@@ -1,4 +1,6 @@
-# amazon-practice
+# Amazon Practice Questions
+===========
+## Coding Questions
 1. BFS
 2. DFS
 3. Topological Sort
