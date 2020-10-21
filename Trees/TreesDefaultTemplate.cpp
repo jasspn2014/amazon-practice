@@ -15,15 +15,48 @@ struct Node{
 	}
 };
 
+void inOrder(Node *root){
+	if(root == NULL)
+		return;
+	inOrder(root->left);
+  cout << root->data << " ";
+	inOrder(root->right);
+}
+
+Node* createTree(Node *root, int data){
+	if(root == NULL)
+		return new Node(data);
+	else{
+		queue<Node*> q;
+		q.push(root);
+		while(!q.empty()){
+			Node *tmp = q.front();
+			q.pop();
+			if(tmp->left == NULL){
+				tmp->left = new Node(data);
+				return root;
+			}
+			else if(tmp->right == NULL){
+					tmp->right = new Node(data);
+					return root;
+			}
+			else{
+				q.push(tmp->left);
+				q.push(tmp->right);
+			}
+		}
+		return root;
+	}
+}
+
 int main(){
 	Node *root = NULL;
-	root = new Node(1);
-	root->left = new Node(2);
-	root->right = new Node(3);
-	root->left->left = new Node(4);
-	root->left->right = new Node(5);
-	root->right->left = new Node(6);
-	root->right->right = new Node(7);
+	int arr[] = {};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	for(int i=0;i<n;i++)
+		root = createTree(root,arr[i]);
+
+	
 
 
 	return 0;

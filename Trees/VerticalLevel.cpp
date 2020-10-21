@@ -14,6 +14,7 @@ struct Node{
 		right = NULL;
 	}
 };
+
 void inOrder(Node *root){
 	if(root == NULL)
 		return;
@@ -21,6 +22,7 @@ void inOrder(Node *root){
   cout << root->data << " ";
 	inOrder(root->right);
 }
+
 Node* createTree(Node *root, int data){
 	if(root == NULL)
 		return new Node(data);

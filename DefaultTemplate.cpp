@@ -25,6 +25,14 @@ void printArr(vector<int> v){
 }
 
 
+void read(vector<int> &v, int n){
+	for(int i=0;i<n;i++){
+		cin >> v[i];
+	}
+}
+
+
+
 int main(){
 
 	return 0;
