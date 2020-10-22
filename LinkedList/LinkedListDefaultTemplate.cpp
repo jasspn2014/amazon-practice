@@ -34,8 +34,25 @@ void printLinkedList(Node *head){
 	}
 }
 
+int countLinkedList(Node *head){
+	int cnt = 1;
+	Node *fast = head->next,*slow = head;
+	while(fast != NULL){
+		cnt++;
+		fast = fast->next;
+		if(fast != NULL){
+			cnt++;
+			fast = fast->next;
+			slow = slow->next;
+		}
+	}
+	cout << "Slow : " << slow->data << endl;
+	cout << "Fast: " << fast->data << endl;
+	return cnt;
+}
+
 int main(){
-	int arr[] = {1,2,3,4,5,6,7,8};
+	int arr[] = {1,2,3,4,5,6,7,8,9,10};
 	int n = sizeof(arr)/sizeof(arr[0]);
 
 	Node *start = NULL;
@@ -43,5 +60,7 @@ int main(){
 		start = insertNode(start,arr[i]);
 
 	printLinkedList(start);
+	cout << endl;
+	cout << countLinkedList(start);
 	return 0;
 }
