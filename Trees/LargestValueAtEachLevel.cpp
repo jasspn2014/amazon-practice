@@ -49,9 +49,42 @@ Node* createTree(Node *root, int data){
 	}
 }
 
+void LargestatEachLevel(Node *root){
+	if(root == NULL){
+		return;
+	}
+	queue<Node *> q;
+	q.push(root);
+	while(!q.empty()){
+		int n = q.size();
+		int mx = INT_MIN;
+		for(int i=0;i<n;i++){
+			Node* tmp = q.front();
+			q.pop();
+			mx = max(mx,tmp->data);
+			if(tmp->left){
+				q.push(tmp->left);
+			}
+			if(tmp->right){
+				q.push(tmp->right);
+			}
+		}
+		cout << mx << " ";
+	}
+}
+
 int main(){
 	Node *root = NULL;
+	int arr[] = {};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	root = new Node(4);
+	root->left = new Node(9);
+	root->right = new Node(2);
+	root->left->left = new Node(3);
+	root->left->right = new Node(5);
+	root->right->right = new Node(7);
 
+	LargestatEachLevel(root);
 
 
 
