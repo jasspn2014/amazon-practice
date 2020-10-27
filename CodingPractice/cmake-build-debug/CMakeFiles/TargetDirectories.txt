@@ -1,0 +1,3 @@
+C:/Users/jassp/CLionProjects/CodingPractice/cmake-build-debug/CMakeFiles/CodingPractice.dir
+C:/Users/jassp/CLionProjects/CodingPractice/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jassp/CLionProjects/CodingPractice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
