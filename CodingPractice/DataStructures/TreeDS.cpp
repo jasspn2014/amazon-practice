@@ -43,7 +43,7 @@ Tree* buildTree(char in[], char pre[], int inStrt, int inEnd)
 
     /* Pick current node from Preorder traversal using preIndex
     and increment preIndex */
-    Tree* tNode = newNode(pre[preIndex++]);
+	    Tree* tNode = newNode(pre[preIndex++]);
 
     /* If this node has no children then return */
     if (inStrt == inEnd)
@@ -311,6 +311,3 @@ int main()
 //    printf("Inorder traversal of the constructed tree is \n");
 //    inOrder(root);
 }
-
-
-
