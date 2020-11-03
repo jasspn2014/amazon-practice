@@ -27,7 +27,7 @@ Node *insertNode(Node *head, int data){
 	}
 }
 
-Node* reverse(Node *head){
+Node* reverseIterative(Node *head){
 	Node *curr = head,*prev = NULL,*next = NULL;
 	while(curr != NULL){
 		next = curr->next;
@@ -39,6 +39,17 @@ Node* reverse(Node *head){
 	return prev;
 }
 
+
+Node *reverseRecursive(Node *head, Node *prev){
+	if(head -> next ==  NULL){
+		head->next = prev;
+		return head;
+	}
+	Node *tmp = head->next;
+	head->next = prev;
+	return reverseRecursive(tmp, head);
+
+}
 void printLinkedList(Node *head){
 	while(head != NULL){
 		cout << head->data << " ";
@@ -55,7 +66,7 @@ int main(){
 		start = insertNode(start,arr[i]);
 
 	printLinkedList(start);
-	start = reverse(start);
+	start = reverseRecursive(start,NULL);
 	cout << endl;
 	printLinkedList(start);
 	return 0;

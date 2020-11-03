@@ -32,7 +32,7 @@ void printMatrix(vector<vector<int>> &mat){
 	}
 }
 
-void printMatrix(int mat[][col], int row, int col){
+void printMatrix(int **mat, int row, int col){
 
 	for(int i=0;i<row;i++){
 		for(int j=0;j<col;j++){
@@ -43,7 +43,22 @@ void printMatrix(int mat[][col], int row, int col){
 }
 
 
-int main(){
+class Employee{
+	static int count;
+public:
+	Employee(){
+		count++;
+	}
 
+	void getCount(){
+		cout << count << endl;
+	}
+};
+
+int Employee :: count = 0;
+
+int main(){
+	Employee e1,e2,e3;
+	e2.getCount();
 	return 0;
 }
