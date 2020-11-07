@@ -32,37 +32,45 @@ void printMatrix(vector<vector<int>> &mat){
 	}
 }
 
-void printMatrix(int **mat, int row, int col){
 
-	for(int i=0;i<row;i++){
-		for(int j=0;j<col;j++){
-			cout << mat[i][j] << " ";
-		}
-		cout << endl;
-	}
-}
-
-
-class Employee{
-	static int count;
-	int a;
+class Rectangle{
+	float length,width;
 public:
-	Employee(){
-		count++;
-		a = 5;
+	Rectangle(){
+		length = 0;
+		width = 0;
 	}
 
-	void getCount(){
-		cout << count << " "<< a << endl;
+	Rectangle(float length, float width){
+		this->length = length;
+		this->width = width;
 	}
+
+	double getArea(){
+		return length * width;
+	}
+
 };
 
-int Employee :: count = 0;
+
+class Box : public Rectangle{
+		float height;
+	public:
+		Box(){
+			height = 0;
+		}
+
+		Box(float length, float width, float height) : Rectangle(length,width){
+			this->height = height;
+		}
+
+		float getVolume(){
+			return getArea() * height;
+		}
+};
 
 int main(){
-	Employee e1,e2,e3;
-	e1.getCount();
-	e2.getCount();
-	e3.getCount();
+	Box b(10,20,30);
+	cout << b.getVolume();
 	return 0;
 }

@@ -14,16 +14,26 @@ public:
 		this->img = img;
 	}
 
-	Complex operator + (Complex obj){
-		Complex res;
-		res.real = real + obj.real;
-		res.img = img + obj.img;
-		return res;
+	// Complex operator - (Complex obj){
+	// 	Complex res;
+	// 	res.real = real - obj.real;
+	// 	res.img = img - obj.img;
+	// 	return res;
+	// }
+
+	void operator ++(){
+		++real;
+		++img;
 	}
 
+	void operator ++(int){
+		real++;
+		img++;
+	}
+
+
 	void print(){
-		cout << "Real: " << real << endl;
-		cout << "Imag: " << img << endl << endl;
+		cout << real << " + " << img << "i" << endl;
 	}
 
 
@@ -31,11 +41,13 @@ public:
 
 int main(){
 	Complex c1(10,20);
-	Complex c2(30,40);
-
+	Complex c2(100,200);
 	c1.print();
 	c2.print();
 
-	Complex c3 = c1 + c2;
- 	c3.print();
+	cout << endl;
+	++c1;
+	c2++;
+	c1.print();
+	c2.print();
 }

@@ -139,34 +139,3 @@ int main()
 
     cout<<"After try/Catch New Statements"<<endl;
 }
-
-
-//#include<iostream>
-//using namespace std;
-//
-//int main() {
-//    int arr[100];
-//    int largest,sLargest;
-//    int n = 10;
-//    for(int i=0;i<n;i++)
-//    {
-//        cin>>arr[i];
-//    }
-//
-//    largest = arr[0];
-//    sLargest = arr[0];
-//
-//    for(int i=1;i<n;i++)
-//    {
-//        if(arr[i] > largest)
-//        {
-//            sLargest = largest;
-//            largest = arr[i];
-//        }
-//        else if(sLargest < arr[i])
-//            sLargest = arr[i];
-//    }
-//    cout<<sLargest<<endl;
-//
-//
-//}

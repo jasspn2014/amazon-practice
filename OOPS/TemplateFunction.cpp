@@ -32,37 +32,45 @@ void printMatrix(vector<vector<int>> &mat){
 	}
 }
 
-void printMatrix(int **mat, int row, int col){
+// int largest(int a, int b){
+// 	return a > b ? a : b;
+// }
+//
+// float largest(float a, float b){
+// 	return a > b ? a : b;
+// }
+//
+// char largest(char a, char b){
+// 	return a > b ? a : b;
+// }
 
-	for(int i=0;i<row;i++){
-		for(int j=0;j<col;j++){
-			cout << mat[i][j] << " ";
-		}
-		cout << endl;
-	}
+
+template <class T>
+T largest(T a, T b){
+	return a > b ? a : b;
 }
 
 
-class Employee{
-	static int count;
-	int a;
-public:
-	Employee(){
-		count++;
-		a = 5;
-	}
-
-	void getCount(){
-		cout << count << " "<< a << endl;
-	}
-};
-
-int Employee :: count = 0;
-
 int main(){
-	Employee e1,e2,e3;
-	e1.getCount();
-	e2.getCount();
-	e3.getCount();
+	int i1 = 10;
+	int i2 = 20;
+	int i3 = largest(i1,i2);
+	cout << i3 << endl;
+
+	float f1 = 10.22;
+	float f2 = 20.96;
+
+	float f3 = largest(f1,f2);
+	cout << f3 << endl;
+
+	char c1 = 'a';
+	char c2 = 'f';
+
+	char c3 = largest(c1,c2);
+	cout << c3 << endl;
+
+
+	stack<int> st;
+
 	return 0;
 }

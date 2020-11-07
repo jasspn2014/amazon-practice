@@ -32,37 +32,19 @@ void printMatrix(vector<vector<int>> &mat){
 	}
 }
 
-void printMatrix(int **mat, int row, int col){
 
-	for(int i=0;i<row;i++){
-		for(int j=0;j<col;j++){
-			cout << mat[i][j] << " ";
-		}
-		cout << endl;
-	}
-}
-
-
-class Employee{
-	static int count;
-	int a;
+class Derived : public Base, public Base1{
 public:
-	Employee(){
-		count++;
-		a = 5;
+	Derived(){
+			cout << "Derived class Constructor" << endl;
 	}
 
-	void getCount(){
-		cout << count << " "<< a << endl;
+	~Derived(){
+		cout << "Derived class Destructor" << endl;
 	}
 };
 
-int Employee :: count = 0;
-
 int main(){
-	Employee e1,e2,e3;
-	e1.getCount();
-	e2.getCount();
-	e3.getCount();
+	Derived d;
 	return 0;
 }

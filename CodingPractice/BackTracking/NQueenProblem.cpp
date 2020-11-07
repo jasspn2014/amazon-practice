@@ -106,7 +106,7 @@
 #define lli long long int
 #define li long int
 using namespace std;
-#define N 8
+#define N 4
 
 void printSolution(int board[][N])
 {
@@ -170,11 +170,7 @@ int main()
                       {0,0,0,0},
                       {0,0,0,0},
                       {0,0,0,0},
-                      {0,0,0,0},
-                      {0,0,0,0},
-                      {0,0,0,0},
-                      {0,0,0,0}};
-
+										};
     if(!placeNQueens(board,0))
         cout<<"No Solution Exists";
 
